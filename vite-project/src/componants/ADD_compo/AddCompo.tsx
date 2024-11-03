@@ -6,12 +6,13 @@ const AddCompo = () => {
 
 
   const { AddMission } = useGlobalTodo();
-  const [inputName, setinputName] = useState<string>("")
+  const [inputName, setinputName] = useState<string>("");
   function sendNewMission() {
         
     if(inputName.length > 2){
       AddMission({name: inputName, completed: false})
     }
+    setinputName("")
   }
 
 

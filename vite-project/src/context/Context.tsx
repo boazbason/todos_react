@@ -45,7 +45,9 @@ const TodoProvider: React.FC<TodoProviderProps> = ({ children }) => {
   };
 
   const DeleteMission = (id: string) => {
-    setToDoList(toDoList.filter((mission) => mission.id !== id));
+    const index = toDoList.findIndex((mission) => mission.id == id)
+    toDoList.splice(index, 1);
+    setToDoList([...toDoList]);
     updateLocalStorage();
   };
 
