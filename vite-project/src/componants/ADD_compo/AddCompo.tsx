@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { useGlobalTodo } from '../../context/Context'
-import { Mission } from '../../../typs';
 
 
 const AddCompo = () => {

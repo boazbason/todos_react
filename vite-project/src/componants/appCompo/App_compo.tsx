@@ -1,4 +1,3 @@
-import React from 'react'
 import AddCompo from '../ADD_compo/AddCompo'
 import Show_compo from '../Show_compo/Show_compo'
 

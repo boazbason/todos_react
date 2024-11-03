@@ -1,9 +1,8 @@
-import React from 'react';
 import { useGlobalTodo } from '../../context/Context';
 import ToDo_card from '../toDo_card/ToDo_card';
 
 const Show_compo = () => {
-  const { toDoList } = useGlobalTodo(); // קריאה ישירה ל-useGlobalTodo
+  const { toDoList } = useGlobalTodo(); 
 
   return (
     <div>
