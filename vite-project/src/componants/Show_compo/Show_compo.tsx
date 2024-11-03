@@ -1,7 +1,8 @@
 import { useGlobalTodo } from '../../context/Context';
 import ToDo_card from '../toDo_card/ToDo_card';
+import React from 'react'
 
-const Show_compo = () => {
+const Show_compo: React.FC = () => {
   const { toDoList } = useGlobalTodo(); 
 
   return (

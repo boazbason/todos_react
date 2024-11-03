@@ -1,6 +1,7 @@
 import { Mission } from "../../typs";
-import { createContext, FC, ReactNode, useContext, useEffect, useState } from "react";
+import { createContext, ReactNode, useContext, useEffect, useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
+import React from "react";
 
 interface TodoProviderProps {
   children: ReactNode;
@@ -16,7 +17,7 @@ interface ContextProps {
 
 const TodoContext = createContext<ContextProps | null>(null);
 
-const TodoProvider: FC<TodoProviderProps> = ({ children }) => {
+const TodoProvider: React.FC<TodoProviderProps> = ({ children }) => {
   const [toDoList, setToDoList] = useState<Mission[]>([]);
 
   const updateLocalStorage = () => {
